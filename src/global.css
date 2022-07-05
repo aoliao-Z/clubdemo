@@ -1,0 +1,11 @@
+.shadow{
+    transition: 0.3s;
+}
+.shadow:hover{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .12); 
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+}

@@ -1,27 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <nav-bar />
+    <wel-come />
+    <login />
+    <wrap title="大致步骤">
+        <steps />
+    </wrap>
+
+    <wrap title="日期查看">
+        <calendar />
+    </wrap>
+    <Foot />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+<script lang="ts" setup>
+import NavBar from "./components/NavBar.vue"
+import WelCome from "./components/WelCome.vue"
+import Login from "./components/Login.vue"
+import Wrap from "./components/Wrap.vue"
+import Steps from "./components/Steps.vue"
+import Calendar from "./components/Calendar.vue"
+import Foot from "./components/Foot.vue"
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+    margin: 0;
 }
 </style>
